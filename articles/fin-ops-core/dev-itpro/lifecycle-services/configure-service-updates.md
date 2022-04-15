@@ -65,7 +65,7 @@ Follow these steps to change your update settings.
         > [!IMPORTANT]
         > Currently, only a few options are available for the day of the week and time slot options. Microsoft will add more options soon, such as weekdays for customers.
         
-        > If the above time slots do not meet your needs, you always have the option to do a self-update at a time that is convinient to you by taking the update and applying it to your environments using the regular servicing flows.
+        > If the above time slots do not meet your needs, you always have the option to do a self-update at a time that is convenient to you by taking the update and applying it to your environments using the regular servicing flows.
 
  3. When you've finished setting the configuration options, select **Save**.
  
@@ -96,7 +96,7 @@ The additional sandbox environments will be updated on the same cadence as your 
 
 If you have not deployed the production environment, none of the additional sandbox environments will be auto-updated.
 
-If the production environment is updated **before** the email about the production update is sent, then the production environment, as well as all additional sandbox environments, **will not** get updated. If the production environment is updated **after** the email about the production update is sent, then the production environment **will** be canceled, but additional sandbox enviornments will get updated.
+If the production environment is updated **before** the email about the production update is sent, then the production environment, as well as all additional sandbox environments, **will not** get updated. If the production environment is updated **after** the email about the production update is sent, then the production environment **will** be canceled, but additional sandbox environments will get updated.
 
 If there’s any update failure on the production environment or any of the additional sandbox environments, it will not interfere with the remaining updates. That is, if the production update failed, the additional sandbox update will continue. Similarly, if you have additional sandbox environments and one of them failed during the update, the others will continue.
 

@@ -184,7 +184,7 @@ The following changes were made to support extending enumerations:
 |LedgerShowCurrency|
 |LedgerSIEFileType|
 |LedgerTransactionType|
-|LedgerTransEnigneBuildQuery|
+|LedgerTransEngineBuildQuery|
 |LogisticsAddressElement|
 |LogisticsAddrZipCodeImportCountryRegion|
 |LogisticsLocationEntityType|
@@ -406,8 +406,8 @@ The following table lists the new methods that have been extracted and opened fo
 |Form CustBankAccounts|
 |Form DirPartyQuickCreateForm.init|
 |Form HierarchyDetail.contextChanged|
-|Form HierarchyDetail: smmActiviate:  initValue|
-|Form HierarchyNameLookoup: Hierarchy: init|
+|Form HierarchyDetail: smmActivate:  initValue|
+|Form HierarchyNameLookup: Hierarchy: init|
 |Form LedgerJournalTransDimension.init|
 |Form ProjInvoiceProposalDetail.editInvoiceFormat|
 |Form SalesCopying.upDateRemainderCache|
@@ -445,7 +445,7 @@ The following table lists the new methods that have been extracted and opened fo
 |ProjPostRevenueProposal.projTransCreate|
 |projUnpostedTransactionsListPage.populateMenuFunction|
 |PSAProjAndContractInvoiceController.preRunModifyContract|
-|PSARetenetionRelease.run|
+|PSARetentionRelease.run|
 |PurchAutoCreate_SalesLine.setPurchTable|
 |PurchCreateFromSalesOrder.run|
 |PurchFormletterParmDataInvoice.createParmLinesAndTable|
@@ -460,7 +460,7 @@ The following table lists the new methods that have been extracted and opened fo
 |SalesQuotationConfirmationDP.processReport|
 |SalesQuotationConfirmationDP.setSalesQuotationDetailsTmp|
 |SalesQuotationEditLinesForm.createParmLine|
-|SalesQuotationEditLinesForm_Sales_Confir.createSalesLines|
+|SalesQuotationEditLinesForm_Sales_Confirm.createSalesLines|
 |SalesQuotationTableForm_Sales.syncDeliveryScheduleCommercialAttributes|
 |SalesQuotationTableType.validateField|
 |SalesTable2LineUpdate.update|
@@ -495,7 +495,7 @@ The following table lists the new methods that have been extracted and opened fo
 
 ## Changes using other methods to support extensibility
 
-The group of changes in this section includes several different approaches to extensibility and represents the extensibilty changes made before **Chain of Command** was introduced. Some of the approaches used are extracting methods, adding "stub" methods, adding delegates, changing access modifiers on methods, and using the SysExtension framework. Please consult the implementation in places required for your customization to determine if the approach taken will work for your customization. In future releases, this group will be small, because we will primarily be using **Chain of Command**.
+The group of changes in this section includes several different approaches to extensibility and represents the extensibility changes made before **Chain of Command** was introduced. Some of the approaches used are extracting methods, adding "stub" methods, adding delegates, changing access modifiers on methods, and using the SysExtension framework. Please consult the implementation in places required for your customization to determine if the approach taken will work for your customization. In future releases, this group will be small, because we will primarily be using **Chain of Command**.
 
 | Method |
 | -------------|
@@ -814,7 +814,7 @@ Extensibility support has been extended for some methods that were not public an
 |ProjInvoiceJournalPost.initProposalUpdate|
 |ProjLedger.newInventCost|
 |ProjPlanVersionManager.copyActivityData|
-|ProjPlanVersionsMananger.createDraftVersion|
+|ProjPlanVersionsManager.createDraftVersion|
 |ProjProjectTransListPageInteraction.linkActive|
 |Projtask.getCorrespondingTaskElementNumber|
 |ProjValCheckTrans.validateMandatory|
@@ -1019,7 +1019,7 @@ Inline delegates are now available. The most common way to use inline delegates 
 |Form ProjInvoiceProposalCreateLines.TransTypeSelectionCtrl.lookup|
 |Form PurchTable: PurchTable::enableJournalButtons|
 |Form SalesATP.SalesATP|
-|Form SalesQuickQuote: InventDimCombination::getSetQuantyties|
+|Form SalesQuickQuote: InventDimCombination::getSetQuantities|
 |Form SalesQuickQuote: InventDimCombination::salesQty|
 |Form SalesQuotationProjTable::SalesQuotationLine::ItemId::modified|
 |Form SalesQuotationTable: SalesQuotationTable::write|
@@ -1254,7 +1254,7 @@ Inline delegates are now available. The most common way to use inline delegates 
 |SalesQuotationEditLinesForm.mainOnServer|
 |SalesQuotationEditLinesForm_Proj_Confirm.queryBuildSalesQuotationTable|
 |SalesQuotationEditLinesForm_Proj_Send.queryBuildSalesQuotationTable|
-|SalesQuotationEditLinesForm_Sales_Confir.updateNow|
+|SalesQuotationEditLinesForm_Sales_Confirm.updateNow|
 |SalesQuotationEditLinesForm_Sales_Confirm.createSalesLine|
 |SalesQuotationEditLinesForm_Sales_Send.checkLines|
 |SalesQuotationJumpRef.main|
@@ -1372,7 +1372,7 @@ Inline delegates are now available. The most common way to use inline delegates 
 |WhsShipConfirm.canShipConfirm|
 |WHSShipConfirm.createInventTransferParmLineFromContainerTable|
 |WHSShipConfirm.runTransferShip|
-|WhsShipConfirn.validateAllAllowedForOverOrUnderdeliveryWorkQtyHasBeenPicked|
+|WHSShipConfirm.validateAllAllowedForOverOrUnderdeliveryWorkQtyHasBeenPicked|
 |WHSSplitWork.splitWork|
 |WHSWorkClusterTable.cleanupCluster|
 |WHSWorkCreateProdPut.insertProdParmforCoByProduct|
@@ -1490,7 +1490,7 @@ The changes have led to changing multiple places across the application, includi
 |Table EcoResTrackingDimensionGroup.isDimFieldTrackingDimension|
 |Table InterCompanyInventDim mappings|
 |Table InventAgeGroupDimTmp mappings|
-|Table InventCheckRecieptCostPricePcsTmp mappings|
+|Table InventCheckReceiptCostPricePcsTmp mappings|
 |Table InventCostTmpTransBreakdown mappings|
 |Table InventCountStatisticsTmp mappings|
 |Table InventDim mappings|

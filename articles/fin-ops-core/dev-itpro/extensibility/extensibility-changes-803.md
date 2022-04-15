@@ -94,7 +94,7 @@ These methods have been refactored to support extensibility through chain of com
 |EcoResProductCreate.writeMoreFields|
 |EcoResProductDetailsExtended.initInventDimensionsMetadataEntries|
 |ElectronicPaymentRemitExport_BR.construct|
-|ForecastPuch|
+|ForecastPurch|
 |ForecastSales.accountConsumption|
 |ForecastSales.accountDisc|
 |ForecastSales.accountIssue|
@@ -170,7 +170,7 @@ These methods have been refactored to support extensibility through chain of com
 |ProjIntercompanyTransQuery.buildHoursQuery|
 |ProjIntercompanyTransQuery.buildVendorInvoiceLinesQuery|
 |ProjInventJournalTransMapForm.checkActivity|
-|projInvoiceChooose.setProposalJour|
+|projInvoiceChoose.setProposalJour|
 |ProjInvoiceChoose.doRevenue|
 |ProjInvoiceChoose.updateInvoiceTotal|
 |ProjInvoiceProposalCreateLines.isRevenueTrans|
@@ -309,7 +309,7 @@ In addition to the refactored methods, the following extensibility enhancements 
 
 - Increase EDT string size for EcoResProductSearchName
 - Change CacheLookup property to NotInTTS for AssetLedgerAccounts
-- Change CacheLookup property to Found on TaxOnItem, TaxJurisdiction, TaxGroupData, and TaxData, and AssetLedgerAcounts
+- Change CacheLookup property to Found on TaxOnItem, TaxJurisdiction, TaxGroupData, and TaxData, and AssetLedgerAccounts
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

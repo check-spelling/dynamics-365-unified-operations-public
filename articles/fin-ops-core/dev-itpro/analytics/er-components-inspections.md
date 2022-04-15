@@ -426,7 +426,7 @@ The following steps show how this issue might occur.
 
 9. Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page and verify that the configured **GroupedTrans** data source can be queried.
 
-    ![Validating the ER model mapping component and verifing that the GroupedTrans data source can be queried on the Model mapping designer page.](./media/er-components-inspections-05b.png)
+    ![Validating the ER model mapping component and verifying that the GroupedTrans data source can be queried on the Model mapping designer page.](./media/er-components-inspections-05b.png)
 
 10. Notice that a validation error occurs, because the **Trans** data source contains a nested field of the **Calculated field** type that doesn't allow the call for the **GroupedTrans** data source to be translated to the direct SQL statement.
 
@@ -474,7 +474,7 @@ The following steps show how this issue might occur.
 11. Change the expression of the **Vendor.FilteredTrans** data source from `FILTER(Trans, Trans.AccountNum=Vendor.AccountNum)` to `WHERE(Trans, Trans.AccountNum=Vendor.AccountNum)`.
 12. Select **Validate** to inspect the editable model mapping component on the **Model mapping designer** page and verify that the configured **JoinedList** data source can be queried.
 
-    ![Validating the editable model mapping componenent and verifying that the JoinedList data source can be queried on the Model mapping designer page.](./media/er-components-inspections-06b.png)
+    ![Validating the editable model mapping component and verifying that the JoinedList data source can be queried on the Model mapping designer page.](./media/er-components-inspections-06b.png)
 
 13. Notice that a validation error occurs, because the expression of the **Vendor.FilteredTrans** data source can't be translated to the direct SQL call. Additionally, the direct SQL call doesn't allow the call for the **JoinedList** data source to be translated to the direct SQL statement.
 
@@ -619,7 +619,7 @@ The following steps show how this issue might occur.
 
 16. Notice that a validation error occurs. The message states that an error might be thrown for the configured **Statement\\Party\\Name** and **Statement\\Party\\AccountNum** format components at runtime if the `model.Vendor` list is empty.
 
-    ![Validation error about a potential error for the configured format compontents.](./media/er-components-inspections-09d.png)
+    ![Validation error about a potential error for the configured format components.](./media/er-components-inspections-09d.png)
 
 The following illustration shows the runtime error that occurs if you ignore the warning, select **Run** to run the format, and select the account number of a nonexistent vendor. Because the requested vendor doesn't exist, the `model.Vendor` list will be empty (that is, it will contain no records).
 

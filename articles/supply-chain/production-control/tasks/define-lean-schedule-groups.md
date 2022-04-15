@@ -46,11 +46,11 @@ Lean schedule groups are defined to group and distinguish products in kanban sch
 2. In the Item relation type field, select Item
 3. In the Item number field, type a value.
 4. In the Throughput ratio field, enter a number.
-    * The default Throughput ratio is 1, which means that the related products consume exactly the capacity specified in the process activites of the production flows. Throughput ratio > 1 defines a higher resource consumption, Throughput ratio < 1 defines a lower resource consumption. The ratio is used in the cost calculation and in the calculation of the kanban job consumption.  
+    * The default Throughput ratio is 1, which means that the related products consume exactly the capacity specified in the process activities of the production flows. Throughput ratio > 1 defines a higher resource consumption, Throughput ratio < 1 defines a lower resource consumption. The ratio is used in the cost calculation and in the calculation of the kanban job consumption.  
 
 ## Associate item allocation key
 1. Associate an item allocation key
-    * Add an association to an item allocation key by using the Item relation type Group.   Note that for this process, you need a forecast item alllocation key defined in your data.  
+    * Add an association to an item allocation key by using the Item relation type Group.   Note that for this process, you need a forecast item allocation key defined in your data.  
 2. In the Item relation type field, select Group
 3. In the Item allocation key field, click the drop-down button to open the lookup.
 4. In the list, click the link in the selected row.

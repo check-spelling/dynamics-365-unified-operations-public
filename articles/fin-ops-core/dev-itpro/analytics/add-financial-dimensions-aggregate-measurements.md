@@ -47,7 +47,7 @@ The following list shows some of the tables are filled in the Entity store when 
 - LedgerActivityMeasure\_LedgerActivityMeasureGroup
 - LedgerActivityMeasure\_TransactionDate
 - LedgerActivityMeasure\_Currency
-- LedgerActivityMeasure\_FiscalPeriodDateAggregtateDimension
+- LedgerActivityMeasure\_FiscalPeriodDateAggregateDimension
 - LedgerActivityMeasure\_LedgerFactDimension
 - LedgerActivityMeasure\_FiscalYearOffsetDimension
 - LedgerActivityMeasure\_MainAccount
@@ -95,7 +95,7 @@ In this example, we will use Power BI desktop to create a report that uses the L
 2. Select the following tables:
 
     - LedgerActivityMeasure\_LedgerActivityMeasureGroup
-    - LedgerActivityMeasure\_FiscalPeriodDateAggregtateDimension
+    - LedgerActivityMeasure\_FiscalPeriodDateAggregateDimension
     - LedgerActivityMeasure\_DimensionCombination
 
 3. Use the **Manage relationships** option in Power BI desktop to define the following relationships between table fields:
@@ -175,7 +175,7 @@ Both primary accounts and offset accounts must be associated with transaction da
 
 ![Example of role-playing dimensions.](media/062a0d860fe1633a6616bca6e871f95e.png)
 
-We have modeled two dimension references for LedgerActivityMeaureGroup. The first reference, DimensionCombination, is joined by using the **LedgerDimension** field. We saw this pattern earlier in this topic.
+We have modeled two dimension references for LedgerActivityMeasureGroup. The first reference, DimensionCombination, is joined by using the **LedgerDimension** field. We saw this pattern earlier in this topic.
 
 The second reference, OffsetDimensionCombination, is another reference to the same dimension. We have reused the DimensionCombination aggregate dimension and given it a new name. In the second case, we can join by using the **OffsetLedgerDimension** field.
 

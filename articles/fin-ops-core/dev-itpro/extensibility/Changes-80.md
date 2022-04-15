@@ -257,7 +257,7 @@ These methods have been refactored to support extensibility through chain of com
 |Class ProdUpdReportFinished.updateRouteConsumption|
 |Class ProdUpdSplit.createSplitToProduction|
 |Class ProdUpdStartUp.getListOfBOMJournals|
-|Class ProdUpdStartUp.updateBOMConsmption|
+|Class ProdUpdStartUp.updateBOMConsumption|
 |Class ProjInvoiceDP.insertIntoProjInvoiceTmp|
 |Class ProjInvoiceProposalInsertLines.run|
 |Class ProjInvoiceProposalInsertLines::run()|
@@ -303,7 +303,7 @@ These methods have been refactored to support extensibility through chain of com
 |Class PurchTableInteractionHelper.getUpdateJournalButtons|
 |Class PurchaseOrderResponseConsume.checkIfPurchLinesRequireUpdate|
 |Class PurchaseOrderResponseConsume.checkIfResponseLineCannotBeConsumedAndUpdateConsumptionState|
-|Class PurchaseOrderResponseConsume.consumeFirstPurchaseOrderResponeLineAndInitiateArchivingOnPurchLine|
+|Class PurchaseOrderResponseConsume.consumeFirstPurchaseOrderResponseLineAndInitiateArchivingOnPurchLine|
 |Class PurchaseOrderResponseConsume.consumeRemainingPurchaseOrderResponseLines|
 |Class PurchaseOrderResponseConsumeLine.checkIfSelectedPurchLinesRequireUpdate|
 |Class ReqCalc.covCodeQty|
@@ -332,7 +332,7 @@ These methods have been refactored to support extensibility through chain of com
 |Class SalesAutoCreate_ReleaseFromAgreement.createSalesTable|
 |Class SalesCancelOrder.run|
 |Class SalesCopying.copy|
-|Class SalesCreateOrderFromCutomer.main|
+|Class SalesCreateOrderFromCustomer.main|
 |Class SalesFormLetter.mainOnServer|
 |Class SalesFormLetterParmData.createParmLine|
 |Class SalesFormLetterReport.construct|
@@ -348,7 +348,7 @@ These methods have been refactored to support extensibility through chain of com
 |Class SalesPackingSlipJournalPost.addToInventReportDimHistory|
 |Class SalesPurchLineInterface.setPriceAgreement|
 |Class SalesQuotationCopying.copyHeader|
-|Class SalesQuotationEditLinesForm_Sales_Confir.createSalesTable|
+|Class SalesQuotationEditLinesForm_Sales_Confirm.createSalesTable|
 |Class SalesQuotationEditLinesForm|
 |Class SalesQuotationLineType_Sales.validateWrite|
 |Class SalesTableListPageInteraction.setButtonInterCompany|
@@ -440,9 +440,9 @@ These methods have been refactored to support extensibility through chain of com
 |Table InventQualityOrderLine.adjustInt|
 |Table InventQualityOrderTable.createInventQualityOrderLines|
 |Table InventQualityOrderTable.initFromReference|
-|Table InventQualityOrderTable.initQtyFromAssocation|
-|Table InventTestAssocationTable.checkAccountRelation|
-|Table InventTestAssocationTable.validateWrite|
+|Table InventQualityOrderTable.initQtyFromAssociation|
+|Table InventTestAssociationTable.checkAccountRelation|
+|Table InventTestAssociationTable.validateWrite|
 |Table InventTrans.insertReturnTransOrigin|
 |Table InventTransOrigin.createOrigin|
 |Table InventTransferParmLine.createPickLines|
@@ -522,7 +522,7 @@ This release made minor improvements to the new model for adding inventory dimen
 |Form PurchAgreementHistory should use field group for showing dimensions|
 |Form PurchComplementaryInvoice should use field group for showing dimensions|
 |Form PurchRFQCompareLineDimensions should use field group for showing dimensions|
-|Form PurchTable.TrackingDimesions has incorrect spelling|
+|Form PurchTable.TrackingDimensions has incorrect spelling|
 |Form PurchVendorPortalAllResponse should use field group for showing dimensions|
 |Form PurchVendorPortalConfirmedOrders should use field group for showing dimensions|
 |Form PurchVendorPortalOriginalOrder should use field group for showing dimensions|
@@ -567,8 +567,8 @@ The following table lists additional changes that have been made for extensibili
 |AxMaps - TradePostalAddress - partyTable|
 |Bank Trans Comments - BankReconciliationDataInitializer|
 |Cancellation Log Requirements - Update Sales Deliver Remainder|
-|Extend the grouping mechanisme from purch req line to purch line|
-|Extend the splitting mechanisme from purch req line to purch line|
+|Extend the grouping mechanism from purch req line to purch line|
+|Extend the splitting mechanism from purch req line to purch line|
 |Allow multiple funding sources in conjunction with item requirements|
 |Implementing exchange rate provider framework|
 |Make the PriceDiscPartyCodeType extensible in all usages|

@@ -205,15 +205,15 @@ Configuration of an ER component is done in the draft version of the ER configur
 
 As described earlier in this topic, you can add required ER labels to an editable ER component. In this way, you can specify the text of the ER labels in the EN-US language. You can then export the labels of the ER component by using the built-in ER function. Select the draft version of an ER configuration that contains the editable ER component, and then select **Exchange \> Export labels**.
 
-![ER Configurations page allowing to export ER labels from the selected conviguration version.](./media/er-multilingual-labels-export.png)
+![ER Configurations page allowing to export ER labels from the selected configuration version.](./media/er-multilingual-labels-export.png)
 
 You can export either all labels or the labels for a single language that you specify at the beginning of export. Labels are exported as a zip file that contains XML files. Every XML file contains labels for a single language.
 
-![Sample of the exported file containing ER lables for DE-AT language.](./media/er-multilingual-labels-in-xml.png)
+![Sample of the exported file containing ER labels for DE-AT language.](./media/er-multilingual-labels-in-xml.png)
 
 This format is used for automatic translation of labels by  external translation services such as [Dynamics 365 Translation Service](../lifecycle-services/translation-service-overview.md). When you receive the translated labels, you can import them back into the draft version of an ER configuration that contains the ER components that own those labels. Select the draft version of an ER configuration that contains the editable ER component, and select **Exchange \> Load labels**.
 
-![ER Configurations page allowing to import ER labels to the selected conviguration version.](./media/er-multilingual-labels-load.png)
+![ER Configurations page allowing to import ER labels to the selected configuration version.](./media/er-multilingual-labels-load.png)
 
 Translated labels will be imported into the selected ER configuration. Translated labels that exist in this ER configuration are replaced. If any translated label is missing in the ER configuration, it's appended.
 
@@ -245,7 +245,7 @@ When you change the status of an ER configuration version from **Draft** to **Co
 
 We recommend that you enable the **Accelerate the ER labels storage** feature in the **Feature management** workspace. This feature helps improve network bandwidth utilization and overall system performance because, in most cases, ER labels of a single language are used when you work with a single ER configuration.
 
-To apply the selected storage schema for keeping labels of all ER configurations in the currenet Finance instance, complete the following steps.
+To apply the selected storage schema for keeping labels of all ER configurations in the current Finance instance, complete the following steps.
 
 1. Go to **Organization administration** > **Periodic** > **Apply the selected labels storing schema for all ER configurations**.
 2. Select **OK**.

@@ -37,7 +37,7 @@ public void init(){
     …    
     // HierarchyViewer is the auto-declared name for the control.
     // handleNodeSelected is your event handler.
-    HierarchyViewer.notfiyNodeSelected += eventhandler(element.handleNodeSelected);
+    HierarchyViewer.notifyNodeSelected += eventhandler(element.handleNodeSelected);
 }
 public void handeNodeSelected(int _nodeId)
 {
@@ -53,7 +53,7 @@ To create a HierarchyViewer instance:
 
 ![Screen shot of Properties pane.](./media/hierarchyviewer_properties-256x300.png)
 
-The HierarchyViewer control is primarily a visually interactive way of navigating or interrogating nodes in a static manner. The HierarchyViewer control isn't bound to a data source. Instead, the control is managed by a corresponding controller class that extends the base **HierarcyDesignerBase**. You initialize that class with data, and bind to the control instance and the visible fields of the HierarchyViewer node.
+The HierarchyViewer control is primarily a visually interactive way of navigating or interrogating nodes in a static manner. The HierarchyViewer control isn't bound to a data source. Instead, the control is managed by a corresponding controller class that extends the base **HierarchyDesignerBase**. You initialize that class with data, and bind to the control instance and the visible fields of the HierarchyViewer node.
 
 A typical use of the control is to initialize a server-side “in-memory” map of the hierarchy and then dynamically update the control as the user interactively explores the hierarchy by using load-on-demand semantics.
 

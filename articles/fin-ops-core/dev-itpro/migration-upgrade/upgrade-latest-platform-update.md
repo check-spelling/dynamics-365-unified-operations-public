@@ -78,7 +78,7 @@ For more details, follow the instructions for applying a binary hotfix in [Apply
 > **Migrate files for Document management**: After upgrading to Platform update 6 or later, an administrator needs to click the **Migrate Files** button on the **Document management parameters** page to finish the upgrade process. This will migrate any attachments stored in the database to blob storage. The migration will run as a batch process and could take a long time, depending on the number and size of the files being moved from the database into Azure blob storage. The attachments will continue to be available to users while the migration process is running, so there should be no noticeable effects from the migration. To check if the batch process is still running, look for the **Migrate files stored in the database to blob storage** process on the **Batch jobs** page.
 
 ## Apply a platform update to environments that are not connected to LCS
-This section describes how to apply a platform update package to a *local development environment* (one that that is not connected to LCS).
+This section describes how to apply a platform update package to a *local development environment* (one that is not connected to LCS).
 
 ### How to get the platform update package
 Platform update packages are released by Microsoft and can be imported from the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). The package name is prefixed with **Dynamics 365 Unified Operations Platform Update**. Use these steps to import the platform update package:
@@ -91,7 +91,7 @@ Platform update packages are released by Microsoft and can be imported from the 
 3.  Select the desired platform update package.
 
 > [!NOTE]
-> The package in the Shared Asset library may not correspond to the latest build (with hotfixes) of the desired platform release. To guarrantee the latest build, use the LCS environment page as described earlier in this article.
+> The package in the Shared Asset library may not correspond to the latest build (with hotfixes) of the desired platform release. To guarantee the latest build, use the LCS environment page as described earlier in this article.
 
 ### Apply the platform update package to your development environment
 > [!NOTE]
@@ -172,7 +172,7 @@ msiexec /i "DIXF_Service_x64.msi" ISSQLSERVERVERSION="Bin" SERVICEACCOUNT="NT AU
 ## Apply the platform update package on a build environment (Platform update 6 or earlier)
 
 > [!NOTE]
-> Skip this section if you are updating to Platform update 7 or newer. This was a prerequesite step for build environments.
+> Skip this section if you are updating to Platform update 7 or newer. This was a prerequisite step for build environments.
 
 If the build machine has been used for one or more builds, you should restore the metadata packages folder from the metadata backup folder before you upgrade the VM to a newer platform update. You should then delete the metadata backup. These steps help ensure that the platform update will be applied on a clean environment. The next build process will then detect that no metadata backup exists and will automatically create a new one. This new metadata backup will include the updated platform. To determine whether a complete metadata backup exists, look for a BackupComplete.txt file in I:\\DynamicsBackup\\Packages (or C:\\DynamicsBackup\\Packages on a downloadable virtual hard disk \[VHD\]). If this file is present, a metadata backup exists, and the file will contain a timestamp that indicates when it was created. To restore the deployment's metadata packages folder from the metadata backup, open an elevated Windows PowerShell **Command Prompt** window, and run the following command. This command will run the same script that is used in the first step of the build process.
 

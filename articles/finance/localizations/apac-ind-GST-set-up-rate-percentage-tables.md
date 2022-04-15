@@ -49,7 +49,7 @@ ms.dyn365.ops.version: 10.0.4
 
 4. Select the **Load on Inventory Percentage** node, and in the **Value** field, enter the load on inventory percentage.
 
-    ![Load on inventory percentage.](media/load-on-invertory.png)
+    ![Load on inventory percentage.](media/load-on-inventory.png)
 
 5. Select **Save**, and then select **Close**.
 6. On the **Companies** FastTab, select **Parameters**.
@@ -80,7 +80,7 @@ Duplicate tax setup refers to records with the same values in input fields. Foll
 
 To resolve and prevent this issue, enable **Tax setup validation** in [Feature Management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). With this feature enabled, the system will check for duplicates when you enter new data through the UI or when you import the tax setup from a CSV file. 
 
-To check for existing dupclicates, select **Show Duplicates**, and then delete the unwanted records.
+To check for existing duplicates, select **Show Duplicates**, and then delete the unwanted records.
 
 ### Enter non-exist master data
 

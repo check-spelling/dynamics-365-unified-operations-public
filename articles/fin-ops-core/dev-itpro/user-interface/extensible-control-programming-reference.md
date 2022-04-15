@@ -36,7 +36,7 @@ This topic provides reference content for extensible control programming.
 This document describes the API, HTML, and JavaScript support for creating extensible controls.
 
 ## Examples
-This document contains small code snippets that show how to use each API that is documented. More complete examples of finished controls that leverage many of these APIs can be found on Github. [Extensible Control Examples on Github](https://github.com/Microsoft/Dynamics-AX-Extensible-Control-Samples)
+This document contains small code snippets that show how to use each API that is documented. More complete examples of finished controls that leverage many of these APIs can be found on GitHub. [Extensible Control Examples on GitHub](https://github.com/Microsoft/Dynamics-AX-Extensible-Control-Samples)
 
 ## Control block diagram
 This high-level diagram illustrates the key components of an extensible control and how they interact with each other. Your extensible control solution will contain two X++ classes that implement your control. The runtime class implements the runtime data, presentation, and behavior of your control. The build class defines how your control is displayed in Form Designer, Property Window, and Application Explorer. [![Extensibility architecture.](./media/extensibilityarchitecture.png)](./media/extensibilityarchitecture.png)
@@ -96,7 +96,7 @@ private void setText(str value)
 ```
 
 ## Runtime: FormPropertyAttribute
-The **FormPropertyAttribute** is applied to a method in your control class, which allows an X++ method to be called as a **FormProperty** getter/setter from the control's JavaScript class. A method with this attribute applied is called a **property.** Only use the **FormPropertyAttribute** on those X++ methods which need to be accessed directly from the control’s JavaScript class. The **FormPropertyAttribute** has no effect on the behavior of the X++ method when the method is used from within X++. Every property exposes an endpoint to the browser. As such, every property should be threat modeled and tested for exploits. The underlying X++ method should be declared private so that it is not accessible from other X++ code. If other X++ code needs to access the property, then declare a separate public X++ method without the **FormPropertyAttibute,** and move the shared property logic to this method. Then call this method from the private X++ method with the **FormPropertyAttribute. This practice allows the property to perform logic that is specific to calls coming from JavaScript (such as argument type deserialization, argument validation, security validation, etc.) before executing the core shared X++ logic.** The underlying X++ method must accept and return the desired type of the property. If the desired type if an EDT, the property must accept and return the base type of the EDT. The supported property types are:
+The **FormPropertyAttribute** is applied to a method in your control class, which allows an X++ method to be called as a **FormProperty** getter/setter from the control's JavaScript class. A method with this attribute applied is called a **property.** Only use the **FormPropertyAttribute** on those X++ methods which need to be accessed directly from the control’s JavaScript class. The **FormPropertyAttribute** has no effect on the behavior of the X++ method when the method is used from within X++. Every property exposes an endpoint to the browser. As such, every property should be threat modeled and tested for exploits. The underlying X++ method should be declared private so that it is not accessible from other X++ code. If other X++ code needs to access the property, then declare a separate public X++ method without the **FormPropertyAttribute,** and move the shared property logic to this method. Then call this method from the private X++ method with the **FormPropertyAttribute. This practice allows the property to perform logic that is specific to calls coming from JavaScript (such as argument type deserialization, argument validation, security validation, etc.) before executing the core shared X++ logic.** The underlying X++ method must accept and return the desired type of the property. If the desired type if an EDT, the property must accept and return the base type of the EDT. The supported property types are:
 
 -   [X++ primitive types](/dynamicsax-2012/developer/primitive-data-types)
 -   [X++ data contracts](/dotnet/api/system.runtime.serialization.datacontractattribute) (whose members are also supported types)
@@ -104,7 +104,7 @@ The **FormPropertyAttribute** is applied to a method in your control class, whic
 
 You supply the following arguments to the **FormPropertyAttribute** constructor:
 
--   **FormPropertyKind:** A required **FormProperyKind** value that specifies the type of the property. Use **FormPropertyKind::Value** for Properties not bound to a data source field, and use **FormPropertyKind::BindableValue** for properties that may be bound to a data source field.
+-   **FormPropertyKind:** A required **FormPropertyKind** value that specifies the type of the property. Use **FormPropertyKind::Value** for Properties not bound to a data source field, and use **FormPropertyKind::BindableValue** for properties that may be bound to a data source field.
 -   **Name:** A required string that specifies the name of the property. A few best practices for naming properties:
     -   Capitalize the first letter, and use PascalCase.
     -   Do not use any of the names of inherited JavaScript properties
@@ -282,7 +282,7 @@ There are a number of FormDesignProperty attributes which may be applied alongsi
     -   Class
     -   Form
     -   MenuItemDisplay
-    -   MenuItemOuput
+    -   MenuItemOutput
     -   MenuItemAction
     -   Tile
     -   KPI

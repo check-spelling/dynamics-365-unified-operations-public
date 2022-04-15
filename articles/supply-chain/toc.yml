@@ -3264,7 +3264,7 @@
         - name: Costing parameter values setup
           href: landed-cost/costing-parameters-setup.md
         - name: Default descriptions for the general ledger
-          href: landed-cost/defult-descriptions.md
+          href: landed-cost/default-descriptions.md
       - name: Vendor settings added for Landed cost
         href: landed-cost/vendors-landed-cost-settings.md
       - name: Work with voyages, containers, and folios
@@ -3710,7 +3710,7 @@
         - name: Directly derived firmed orders are processed by an in-review workflow
           href: troubleshooting/planning/firmed-directly-deri.md
         - name: You can't filter master planning items by their related coverage group values
-          href: troubleshooting/planning/master-planning-batc.md
+          href: troubleshooting/planning/master-planning-batch.md
         - name: Master planning generates planned orders for phantom products
           href: troubleshooting/planning/planned-orders-are-g.md
         - name: Planned purchase order created when a purchase exists within negative days
@@ -3860,7 +3860,7 @@
       - name: Transportation management
         items:
         - name: Can only add the main account as the credit account for reconciliation reasons
-          href: troubleshooting/transportation/reconciliation-reaso.md
+          href: troubleshooting/transportation/reconciliation-reason.md
       - name: Warehouse management
         items:
         - name: Warehouse mobile app

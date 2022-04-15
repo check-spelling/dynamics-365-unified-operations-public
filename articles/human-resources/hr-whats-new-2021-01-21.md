@@ -67,7 +67,7 @@ The following bug fixes are included in this release.
 | 543641 | ZIP Code not populating on electronic reporting.  | Fixed an internal bug on ZIP Code not appearing in ACA electronic reports for Benefits management when coverage code is M through Q. |
 | 542815 | Personal contact screen in Employee self-service allows employees to see others' personal contacts. | Fixed error where the **Edit** form for Employee self-service personal contacts doesn't restrict its query enough to guarantee that only a single personal contact is retrieved, allowing for a user to use keyboard shortcuts to view other people's contacts. |
 | 536157 | Can't open **Microsoft Dataverse integration** page in System administration due to call IsVirtualEntityPackageInstalled(). | Issue prevents the **Microsoft Dataverse integration** page from loading in Human Resources. |
-| 533079 | Navigation error "Form was called incorrectly" when we try to look at deductions. | Fixed error ocuring when in **Deductions** form for Benefits management when viewed **As of date**. |
+| 533079 | Navigation error "Form was called incorrectly" when we try to look at deductions. | Fixed error occurring when in **Deductions** form for Benefits management when viewed **As of date**. |
 | 537264 | **Personal information** fast tab missing from candidate record. | Personal information for the candidate is now available on the candidate record. |
 | 537267 | **Professional experience** doesn't display on internal candidate records. | The **Professional experience** fast tab now displays on internal candidate records. Previously, if the candidate was internal, **Professional experience** was replaced by **Employment history**, which is the candidate's employment history within the organization. Both are applicable and must display for internal candidates. |
 | 537067 | **Allowed to contact employer** doesn't display. | The **Allowed to contact employer** control was added to the **Edit professional experience** pane for a candidate record. |
@@ -95,7 +95,7 @@ The following new features are in preview. For more information about turning fe
 ## Coming soon
 | Feature | Details |
 | --- | --- |
-| Email confirmation for benefit enollments | This feature will provide an option to send a confirmation email to employees when they check out from the benefits enrollment experiences in Employee self-service. For more information, see [Configure Benefits management parameters per company](hr-benefits-setup-parameters-per-company.md). |
+| Email confirmation for benefit enrollments | This feature will provide an option to send a confirmation email to employees when they check out from the benefits enrollment experiences in Employee self-service. For more information, see [Configure Benefits management parameters per company](hr-benefits-setup-parameters-per-company.md). |
 | Skills entered by a manager for their employees can be auto-approved by a workflow | Coming soon. |
 
 For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2020 release wave 2](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).

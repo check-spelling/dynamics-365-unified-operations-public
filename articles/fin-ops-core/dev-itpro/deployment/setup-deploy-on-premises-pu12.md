@@ -754,7 +754,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 
 4. The zip file contains empty and demo data .bak files. Select the .bak file, based on your requirements. For example, if you require demo data, download the AxBootstrapDB_Demodata.bak file.
 
-5. Ensure the database section in the infrastructure\ConfigTempate.xml is configured correctly with the following:
+5. Ensure the database section in the infrastructure\ConfigTemplate.xml is configured correctly with the following:
     1. The database name.
     2. The db file and log settings. The db settings should not be lower than the defaults specified.
     3. The path to the backup file downloaded from LCS Shared Asset library. The default name for the Finance + Operations database is AXDB.
@@ -1070,7 +1070,7 @@ To work around this error, remove "-Test:$Test" in line 56 of Config-Prereqs-All
 ### Error "Not process argument transformation on parameter 'Test'. Cannot convert value "System.String" to type "System.Management.Automation.SwitchParameter" when running the Complete-Prereqs-AllVms cmdlet
 To work around this error, remove "-Test:$Test" in line 56, 61 and 66 of Complete-Prereqs-AllVms.ps1 which is found under the **Infrastructure** folder.
 
-### Error "Install-WindowsFeature: The request to add or remove features on the specified server failed" when running Configure-Prereqs on MRType and ReportServerTyoe servers
+### Error "Install-WindowsFeature: The request to add or remove features on the specified server failed" when running Configure-Prereqs on MRType and ReportServerType servers
 .NET Framework 3.5 is required in MRType and ReportServerType servers. By default, however, .NET Framework 3.5 source files aren't included in your Windows Server 2016 installation. To work around this error, install it and specify the source files using the **source** option when you manually add new features by server manager.
 
 ### Error "MSIS7628: Scope names should be a valid Scope description name in AD FS configuration" when running the Publish-ADFSApplicationGroup cmdlet

@@ -232,7 +232,7 @@ The following table shows every standard step icon that is currently available, 
 <td><img src="media/step-icons-invent-style-id.png" alt="Inventory style ID step icon" title="Inventory style ID step icon"><br>InventStyleID</td>
 <td><img src="media/step-icons-invent-version-id.png" alt="Inventory version ID step icon" title="Inventory version ID step icon"><br>InventVersionID</td>
 <td><img src="media/step-icons-item-id.png" alt="Item ID step icon" title="Item ID step icon"><br>ItemID</td>
-<td><img src="media/step-icons-itm-contianer-id.png" alt="ITM container ID step icon" title="ITM container ID step icon"><br>ITMContainerID</td>
+<td><img src="media/step-icons-itm-container-id.png" alt="ITM container ID step icon" title="ITM container ID step icon"><br>ITMContainerID</td>
 </tr>
 <tr>
 <td><img src="media/step-icons-itm-shipment-id.png" alt="ITM shipment ID step icon" title="ITM shipment ID step icon"><br>ITMShipmentID</td>
@@ -303,7 +303,7 @@ The following table shows every standard step icon that is currently available, 
 <tr>
 <td><img src="media/step-icons-to-number.png" alt="To number step icon" title="To number step icon"><br>ToNum</td>
 <td><img src="media/step-icons-to-warehouse.png" alt="To warehouse step icon" title="To warehouse step icon"><br>ToWarehouse</td>
-<td><img src="media/step-icons-tranport-load-id.png" alt="Transport load ID step icon" title="Transport load ID step icon"><br>TransportLoadId</td>
+<td><img src="media/step-icons-transport-load-id.png" alt="Transport load ID step icon" title="Transport load ID step icon"><br>TransportLoadId</td>
 <td><img src="media/step-icons-vendor-batch-id.png" alt="Vendor batch ID step icon" title="Vendor batch ID step icon"><br>VendBatchId</td>
 </tr>
 <tr>

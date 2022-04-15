@@ -214,7 +214,7 @@ For a detailed list of the release date for each version, see [Software lifecycl
 <tbody>
 <tr>
 <td>B0112</td>
-<td>BS-B 0112: Lang tekst &amp; adresse</td>
+<td>BS-B 0112: Lang tekst &amp; addresse</td>
 </tr>
 <tr>
 <td>B0113</td>
@@ -222,7 +222,7 @@ For a detailed list of the release date for each version, see [Software lifecycl
 </tr>
 <tr>
 <td>T0112</td>
-<td>BS-T 0112: Lang tekst &amp; adresse</td>
+<td>BS-T 0112: Lang tekst &amp; addresse</td>
 </tr>
 <tr>
 <td>T0117</td>

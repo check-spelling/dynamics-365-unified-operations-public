@@ -61,7 +61,7 @@ Set up sales tax reporting codes by following the instructions in [Set up sales 
 | 421                          | Tax amount for the acquisition of goods from countries in the EU.                                                                                                                                               | 4b (tax)                                 | ValueAddedTaxOnSuppliesFromCountriesWithinTheEC              |
 | 510                          | Total VAT payables. The value in this box is automatically calculated as the sum of reporting codes 111, 121, 131, 141, 211, 411, and 421.                                                                      | 5a                                       | ValueAddedTaxOwed                                            |
 | 521                          | Input VAT to deduct.                                                                                                                                                                                            | 5b                                       | ValueAddedTaxOnInput                                         |
-| 541                          | Tax relief under the small businesses scheme.                                                                                                                                                                   | 5d                                       | SmallEnterpreneurProvisionReduction                          |
+| 541                          | Tax relief under the small businesses scheme.                                                                                                                                                                   | 5d                                       | SmallEntrepreneurProvisionReduction                          |
 | 571                          | Net VAT amount that will be paid to the tax authorities or reclaimed. The value in this box is automatically calculated as reporting code 510 minus reporting code 521, plus reporting codes 541, 551, and 561. | 5g                                       | ValueAddedTaxOwedToBePaidBack                                |
 
 
@@ -88,7 +88,7 @@ Note that "OB declaration" stands for "Omzetbelasting declaration" where Omzetbe
 8. Set the **Company part of fiscal group** option to **Yes** if this setting is appropriate, and then, in the **Fiscal group** field, select name of the fiscal group. The fiscal groups should already have been created on the **Tax exempt numbers** page.
 9. In the **Format mapping** field, select the **OB declaration (NL)** format that you downloaded earlier.
 
-    ![Eelectronic tax declaration parameters page, General tab.](media/1_Electronic_tax_declaration_parameters.png)
+    ![Electronic tax declaration parameters page, General tab.](media/1_Electronic_tax_declaration_parameters.png)
 
 10. On the **Number sequences** tab, in the **Number sequence code** field, select a number sequence code for the **Electronic OB declaration ID** reference to set the numbering of OB declarations.
 

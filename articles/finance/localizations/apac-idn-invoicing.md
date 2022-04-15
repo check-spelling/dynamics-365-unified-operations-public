@@ -152,7 +152,7 @@ Before credit notes are created for cancellation because of an error in a posted
 
 Create at least two records: one that has a **Cancellation** operation and one that has a **Replacement** operation. There can be several records on the **Financial reasons** page. You can configure as many reasons with an **Blank** operation as needed. These reasons can be used, for instance, when creating a credit note for the item return.  
 
-![Creating financial reasons for credit invoicing.](media/apac-idn-resons.png)
+![Creating financial reasons for credit invoicing.](media/apac-idn-reasons.png)
 
 - To cancel a posted invoice because of an error, create a credit note, and associate it with the original invoice and a financial reason that has a **Cancellation** operation. In this situation, no tax invoice number is generated.
 - To create a credit note for items returns, create a credit note, and associate it with the original invoice and a financial reason that has a **Blank** operation. In this situation, a tax invoice number is generated.
@@ -227,7 +227,7 @@ To enable the system to determine which the sales tax code in Finance correspond
 
 3. On the last line, set the **Lookup result** field to **Other** and the **Sales tax code (TaxCode)** field to **\*Not blank\***. These settings specify that all other sales tax codes should not be considered luxury tax by the system.
 
-![Setting application-specific parameters for sales tax codes.](media/apac-idn-aplication-specific-parameters-tax-code.png)
+![Setting application-specific parameters for sales tax codes.](media/apac-idn-application-specific-parameters-tax-code.png)
 
 To enable the system to determine which sales tax group in Finance corresponds to VAT-free reasons (transaction code 07, reasons 1 through 8) or VAT-exempt reasons (transaction code 08, reasons 1 through 5) when invoices are exported, follow these steps to set the application specific parameters for those reasons.
 
@@ -236,7 +236,7 @@ To enable the system to determine which sales tax group in Finance corresponds t
 3. Set the **Tax group (TaxGroup)** field to the sales group that is used for exemption operations in Finance.
 4. On the last line, set the **Lookup result** field to **Other** and the **Tax group (TaxGroup)** field to **\*Not blank\***. These settings specify that all other sales tax groups should not be considered exemption groups by the system.
 
-![Setting application-specific parameters for transaction codes.](media/apac-idn-aplication-specific-parameters-transaction-codes-07-08.png)
+![Setting application-specific parameters for transaction codes.](media/apac-idn-application-specific-parameters-transaction-codes-07-08.png)
 
 ### Manage the Electronic Invoicing feature setup
 
@@ -366,7 +366,7 @@ You can view the submission logs for all exported documents.
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**.
 2. Select **Update status**. An invoice batch can have the following statuses:
-   - Schecduled
+   - Scheduled
    - Completed
    - Failed 
 4. On the Action Pane, select **Inquiries** \> **Submission details** to view the details of the submission execution logs. The information in the logs is divided among three FastTabs:

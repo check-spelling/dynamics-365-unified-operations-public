@@ -80,7 +80,7 @@ Autoformatting allows you to keep the entire expression well formatted to make f
 
 The editor provides word completion to help you write expression faster and avoid typos. When you start adding new text, the editor automatically offers a list of functions supported in ER functions that contain the characters you have entered. You can also trigger IntelliSense in any place of a configured expression by typing **Ctrl+Space**.
 
-[![ER formula editor gif showing triggering IntelliSense.](./media/ER-AdvEditor-Intelisense.gif)](./media/ER-AdvEditor-Intelisense.gif)
+[![ER formula editor gif showing triggering IntelliSense.](./media/ER-AdvEditor-Intellisense.gif)](./media/ER-AdvEditor-Intellisense.gif)
 
 ## <a name="CodeCompletion">Code completion</a>
 
@@ -160,7 +160,7 @@ To change all occurrences of a certain text, select the text in your expression,
 
 ## <a name="DataPasting">Data sources and functions pasting</a>
 
-You can select **Add data source**, which pastes to the current expression a data source that is currently selected on the **Data source** left panel. Simlilarly, you can select **Add function**, which pastes to the current expression a function that is currently selected on the **Functions** right panel. If you use the ER formula editor, a selected function or a selected data source will always be pasted to the end of the configured expression. When you use the advanced ER formula editor, a selected function or a selected data source can be pasted to any part of the configured expression. You will need to use the cursor to specify where you want to paste the data.
+You can select **Add data source**, which pastes to the current expression a data source that is currently selected on the **Data source** left panel. Similarly, you can select **Add function**, which pastes to the current expression a function that is currently selected on the **Functions** right panel. If you use the ER formula editor, a selected function or a selected data source will always be pasted to the end of the configured expression. When you use the advanced ER formula editor, a selected function or a selected data source can be pasted to any part of the configured expression. You will need to use the cursor to specify where you want to paste the data.
 
 [![ER formula editor gif showing adding a data source and pasting a function.](./media/ER-AdvEditor-PasteValue.gif)](./media/ER-AdvEditor-PasteValue.gif)
 

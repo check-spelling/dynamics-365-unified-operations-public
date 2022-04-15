@@ -90,7 +90,7 @@ The following tables provide information about configuration settings. Use the *
 | The group managed service account (gMSA) to run the MR click-once service, such as yourdomain\Svc-FRCO$.                                       | components.(FinancialReporting).parameters.ClickOnceServicePrincipalUser.accountName.value *   |
 
 > [!NOTE]
-> Remove the extra backslash from the Principal username cofiguration value in the .json file before entering in the LCS UI. For example, contoso\\\\AXServiceUser should be entered as contoso\AXServiceUser in LCS.
+> Remove the extra backslash from the Principal username configuration value in the .json file before entering in the LCS UI. For example, contoso\\\\AXServiceUser should be entered as contoso\AXServiceUser in LCS.
 
 **Application certificate settings**
 
@@ -115,7 +115,7 @@ The following instructions provide information about how to update or redeploy y
 3. Wait for a few minutes and verify that the deployment is deleted. To confirm the deployment is deleted, log in to the on-premises environment and navigate to the Service Fabric Explorer.
 
     The following applications should be deleted:
-   - AXBootstapperAppType
+   - AXBootstrapperAppType
    - AXSFType
    - FinancialReportingType
    - RTGatewayAppType

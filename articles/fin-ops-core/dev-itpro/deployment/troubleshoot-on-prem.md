@@ -163,7 +163,7 @@ You can also remove MonitoringAgentAppType-Agent by selecting the ellipsis butto
 
 ## Remove all applications from Service Fabric
 
-The following script removes and unprovisions all Service Fabric applications except LocalAgent and the monitoring agent for LocalAgent. You must run this script on an orchestrator virtual machine (VM).
+The following script removes and deprovisions all Service Fabric applications except LocalAgent and the monitoring agent for LocalAgent. You must run this script on an orchestrator virtual machine (VM).
 
 ```powershell
 $applicationNamesToIgnore = @('fabric:/LocalAgent', 'fabric:/Agent-Monitoring', 'fabric:/Agent-LBDTelemetry')
@@ -921,7 +921,7 @@ The following sections provide focused debugging steps for claims that are retur
 #### Repo/capture
 
 1. Open Fiddler, go to **Tools \> Options \> HTTPS**, and select **Decrypt HTTPS traffic**.
-2. Start to capture traffic (the shortcut key is F12). You can verify that that traffic is being captured by looking at the lower left of the tool.
+2. Start to capture traffic (the shortcut key is F12). You can verify that traffic is being captured by looking at the lower left of the tool.
 3. Open an InPrivate instance of Internet Explorer or an Incognito instance of Chrome.
 4. Open Finance + Operations (for example, `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/`).
 5. Sign in by using the USERINFO.NETWORKALIAS account and password.
@@ -1449,10 +1449,10 @@ This issue occurs because Reporting Services has a lock on a Microsoft Dynamics 
 **Issue:** When you try to run SysClassRunner on Platform update 29 through Platform update 31, you get the following exception:
 
 ```stacktrace 
-Microsoft.Dynamics.Ax.Xpp.ClrErrorException: TypeInitializationExeption ---> 
+Microsoft.Dynamics.Ax.Xpp.ClrErrorException: TypeInitializationException ---> 
 System.TypeInitializationException: The type initializer for 'Microsoft.Dynamics.Ax.Metadata.XppCompiler.CompilerTracer' threw an exception. ---> 
 System.TypeInitializationException: The type initializer for 'Microsoft.Dynamics.Ax.DesignTime.Telemetry.OneDS' threw an exception. ---> 
-System.IO.FileLoedAxception: Could not load file or assembly 'Microsoft.Diagnostics.Tracing.TraceEvent, Version=2.0.43.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies. 
+System.IO.FileLoadException: Could not load file or assembly 'Microsoft.Diagnostics.Tracing.TraceEvent, Version=2.0.43.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies. 
 The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040) at Microsoft.Dynamics.Ax.DesignTime.Telemetry.OneDS.cctor() 
 --- End of inner exception stack trace ---
 ```

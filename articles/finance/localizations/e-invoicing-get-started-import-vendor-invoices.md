@@ -137,7 +137,7 @@ The Electronic Invoicing service performs two steps during invoice import from t
     
 To perform these two steps, the client should call the service manually for each step. However, we recommend that you set up batch for receiving electronic documents.
 
-To receive electonic invoices, follow these steps:
+To receive electronic invoices, follow these steps:
 
 1. Go to **Organization administration** > **Periodic** > **Electronic documents** > **Receive electronic documents**.
 2. Select **OK** and then close the page.
@@ -146,7 +146,7 @@ To receive electonic invoices, follow these steps:
 ## View receive logs for electronic invoices
 
 To view the receive logs for electronic invoices, go to **Organization administration** > **Periodic** > **Electronic documents** > **Electronic document receipt log**.
-If you don't see successfully proccesed invoices, remove the table filter.
+If you don't see successfully processed invoices, remove the table filter.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

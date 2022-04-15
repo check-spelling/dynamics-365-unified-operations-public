@@ -46,7 +46,7 @@ Public void lookup()
 {
     #DEFINE.COLORVALUE(64)
     Int r,g,b
-    container choosencolor;
+    container chosencolor;
     Binary customcolors = new Binary(#COLORVALUE);
     CCColor colorvalue;
 
@@ -61,9 +61,9 @@ Public void lookup()
         [r, g, b] = chosencolor;
         Colorvalue = WinAPI::RGB2int(r,g,b);
         This.backgroundColor(colorValue);
-        employeeWorkPlannerForm.parmAbsensceColor(colorvalue);
+        employeeWorkPlannerForm.parmAbsenceColor(colorvalue);
         Employeetable.columns(employeeworkplannerform.numberofcolumns());
-        Absenscecolorparm = colorvalue;
+        Absencecolorparm = colorvalue;
     }
 }
 ```
